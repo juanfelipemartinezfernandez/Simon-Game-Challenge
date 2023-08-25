@@ -29,11 +29,11 @@ function sonidoNumeroAleatorio(numero) {
 }
 //Funcion para empezar juego con tecla
 function start(randomNumber) {
-  i=0;
-  list1 = [];
-  sequence = [];
-  $("body").one("keydown", function(event){
 
+  $("body").one("keydown", function(event){
+    i=0;
+    list1 = [];
+    sequence = [];
     sequence.push(buttonColors[randomNumber]);
     $("h1").text("Playing...");
     $(".btn").on("click", function(){
